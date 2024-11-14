@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-family: 'Poppins', sans-serif;  /* Fuente moderna */
+    font-size: 2rem;  /* Tamaño más pequeño */
+    color: #333;  /* Color gris oscuro */
+    font-weight: 600;  /* Peso moderado */
+    letter-spacing: 0.5px;  /* Espaciado sutil */
+    text-transform: none;  /* Mantener las letras como están */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    transition: transform 0.3s ease, color 0.3s ease;  /* Transición suave */
+}
+
+header .logo h1:hover {
+    transform: scale(1.05);  /* Efecto de aumento */
+    color: #007bff;  /* Azul al pasar el cursor */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 123, 255, 0.7);  /* Sombra más notoria */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;  /* Azul para resaltar enlaces */
+}
+
+.hero {
+    background: linear-gradient(135deg, #007bff, #00c6ff);  /* Degradado azul */
+    color: #ffffff;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    background-color: #ffffff;
+    color: #080a0c;
+    padding: 1rem 3rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #2f363d;
+    color: #ffffff;
+}
+
+.services {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 30%;
+    padding: 2rem;
+    background-color: #f1f1f1;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+.contact {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #ffffff;
+    color: #007bff;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+/* Estilo para la Sección de Redes de Inversionistas */
+.redes-inversionistas {
+    background-color: #f1f1f1;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.redes-inversionistas .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.redes-inversionistas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.redes-inversionistas p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+.inversionistas-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.inversionista {
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 30%;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.inversionista h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.inversionista p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.inversionista .cta-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.inversionista .cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.registro-formulario input,
+.registro-formulario textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.registro-formulario button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.registro-formulario button:hover {
+    background-color: #0056b3;
+}
+/* Estilo para la Sección de Oportunidades de Colaboración */
+.oportunidades {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.oportunidades .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.oportunidades h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.oportunidades p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+.proyectos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.proyecto {
+    background-color: #f1f1f1;
+    padding: 2rem;
+    width: 30%;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.proyecto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.proyecto .cta-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.proyecto .cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.colaboracion-formulario input,
+.colaboracion-formulario textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.colaboracion-formulario button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.colaboracion-formulario button:hover {
+    background-color: #0056b3;
+}
+/* Estilo para la Sección de Asesoramiento Profesional */
+.asesoramiento {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.asesoramiento .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.asesoramiento h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.asesoramiento p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+.asesor-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.asesor {
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 30%;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.asesor h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.asesor p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.asesor .cta-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.asesor .cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.asesoramiento-formulario input,
+.asesoramiento-formulario textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.asesoramiento-formulario button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.asesoramiento-formulario button:hover {
+    background-color: #0056b3;
+}
